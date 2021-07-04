@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
+import '../home_screen2.dart';
 
 // We need satefull widget for our categories
 
@@ -13,6 +14,7 @@ class _CategoriesState extends State<Categories> {
   List<String> categories = ["Hand bag", "Jewellery", "Footwear", "Dresses"];
   // By default our first item will be selected
   int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -52,7 +54,7 @@ class _CategoriesState extends State<Categories> {
               height: 2,
               width: 30,
               color: selectedIndex == index ? Colors.black : Colors.transparent,
-            )
+            ),
           ],
         ),
       ),
