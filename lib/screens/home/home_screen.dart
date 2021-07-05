@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:shop_app/components/my_bottom_nav_bar.dart';
 import 'package:shop_app/constants.dart';
 import 'package:shop_app/screens/home/components/body.dart';
 
@@ -9,6 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 
